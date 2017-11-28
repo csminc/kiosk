@@ -1,5 +1,5 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-debian
 FROM petrosagg/resin-wpe:raspberrypi3-9416a43
-#FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
 ENV INITSYSTEM on
 
