@@ -4,6 +4,4 @@ COPY udev-rules/ /etc/udev/rules.d/
 
 COPY wpe-init /wpe-init
 
-RUN apt-get install git-all
-
 CMD [ "/wpe-init" ]
