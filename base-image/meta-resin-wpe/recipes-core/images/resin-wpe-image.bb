@@ -3,12 +3,18 @@ include recipes-core/images/core-image-minimal.bb
 IMAGE_FSTYPES = "tar.gz"
 
 IMAGE_INSTALL_append += " \
+	apache2 \
+	curl \
 	fbcp \
 	fontconfig \
 	fontconfig-utils \
+	php \
+	php-cli \
 	tslib-calibrate \
 	tslib-tests \
 	ttf-bitstream-vera \
+	wireless-tools \
+	wpa-supplicant \
 	wpebackend \
 	wpebackend-rdk \
 	wpelauncher \
