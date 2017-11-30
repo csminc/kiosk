@@ -13,7 +13,6 @@ IMAGE_INSTALL_append += " \
 	wpebackend-rdk \
 	wpelauncher \
 	wpewebkit \
-	git \
 	"
 
 VIRTUAL-RUNTIME_init_manager="busybox"
