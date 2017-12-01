@@ -8,8 +8,7 @@ COPY htdocs/ /usr/share/apache2/htdocs/
 
 EXPOSE 80
 
-CMD ["/usr/sbin/apachectl", "-k", "start"]
-CMD ["/usr/sbin/apachectl", "-k", "start"]
+CMD ["/usr/sbin/apache2", "-k", "start"]
 
 ENV WPE_URL="file:///usr/share/apache2/htdocs/index.php"
 
