@@ -1,4 +1,4 @@
-FROM caleb/resin-wpe:raspberrypi3-3e3af13-dirty
+FROM csmjulian/resin-wpe:latest
 
 COPY udev-rules/ /etc/udev/rules.d/
 

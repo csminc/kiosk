@@ -8,6 +8,7 @@ IMAGE_INSTALL_append += " \
 	fbcp \
 	fontconfig \
 	fontconfig-utils \
+	git \
 	php \
 	php-cli \
 	tslib-calibrate \
