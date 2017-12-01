@@ -6,7 +6,7 @@ COPY httpd.conf /etc/apache2/httpd.conf
 
 COPY htdocs/ /usr/share/apache2/htdocs/
 
-ENV WPE_URL="file:///usr/share/apache2/htdocs/index.php"
+ENV WPE_URL="/usr/share/apache2/htdocs/index.php"
 
 EXPOSE 80
 
