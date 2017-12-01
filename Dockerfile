@@ -6,7 +6,9 @@ COPY htdocs/ /usr/share/apache2/htdocs/
 
 ENV WPE_URL="file:///usr/share/apache2/htdocs/index.php"
 
-CMD [ "apachectl start" ]
+EXPOSE 80
+
+CMD [ "apachectl" , "start" ]
 
 COPY wpe-init /wpe-init
 
