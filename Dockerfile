@@ -8,7 +8,7 @@ COPY htdocs/ /usr/share/apache2/htdocs/
 
 EXPOSE 80
 
-CMD ["/usr/sbin/apache2", "-k", "start"]
+CMD ["/etc/init.d/apache2", "start"]
 
 ENV WPE_URL="file:///usr/share/apache2/htdocs/index.php"
 
