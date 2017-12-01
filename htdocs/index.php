@@ -1,8 +1,9 @@
 <?php
-echo "<html>\n";
-echo "<head></head>\n";
-echo "<body>\n";
-echo "<p>Hello World! Julian and Caleb rule!</p>\n";
-echo "</body>\n";
-echo "</html>\n";
-
+$text = "Julian and Caleb Rule!!!";
+?>
+<html>
+<head></head>
+<body>
+<p>Hello World! <?=$text?></p>
+</body>
+</html>
