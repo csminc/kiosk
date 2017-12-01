@@ -6,12 +6,12 @@ COPY httpd.conf /etc/apache2/httpd.conf
 
 COPY htdocs/ /usr/share/apache2/htdocs/
 
-ENV WPE_URL="/usr/share/apache2/htdocs/index.php"
-
 EXPOSE 80
 
-#CMD [ "apachectl" , "start" ]
 CMD ["/usr/sbin/apachectl", "-k", "start"]
+CMD ["/usr/sbin/apachectl", "-k", "start"]
+
+ENV WPE_URL="file:///usr/share/apache2/htdocs/index.php"
 
 COPY wpe-init /wpe-init
 
